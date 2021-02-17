@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- 文字コード！-->
+<meta charset="utf-8">
+
+<!-- ブラウザで表示されるタイトル !-->
+<title>
+	わたしの写真館｜女の子のための写真館
+</title>
+
+<!-- SEO対策に必要な記述。サーバーアップしたら必ず記述しましょう。
+<meta name="description" content="" />
+<meta name="keywords" content="" /> -->
+<meta name="discription" content="わたしの写真館は写りたいと願う女の子のための写真館です。">
+
+	<!-- スタイルシート -->
+	<link rel="stylesheet" href="reset.min.css" media="all">
+	<link rel="stylesheet" href="style.css" media="all">
+	
+	<!-- googleフォント -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+	<!-- レスポンシブ -->
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+
+	<!-- swiper CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">	
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+    $('a[href^="#"]').on('click', function() {
+      $('.drawer_checkbox').click(); // .menuをクリックした時と同じ処理
+
+      return false; //a要素のリンク先移動防ぐ
+    });
+
+</script>
+
+
+
+<body>
+	<!-- コンテンツ部分のコードを記入していく -->		
+	<header id="header-nav">
+		<div class="header-inner">
+
+			<div class="inner-left">
+				<h1>わたし<span class="h1-space">の写真館</span></h1>
+			</div>
+					
+			<div class="inner-right">
+				<ul>
+				<li><a href="#header-nav">TOP</a></li>
+				<li><a href="#message">message</a></li>
+				<li><a href="#photo">photo</a></li>
+				<li><a href="#cafe">cafe</a></li>
+				<li><a href="#info">info</a></li>
+				<li><a  class="reservation" href="#">撮影予約</a></li>
+				</ul>
+			</div>
+
+			 <div class="drawer">
+			    <input class="drawer_checkbox" id="drawerCheckbox" type="checkbox" >
+			    <!-- ドロワーアイコン部分 -->
+			    <label class="drawer_icon" for="drawerCheckbox">
+			     	<span class="drawer_icon-item"></span>
+			    </label>
+			    <!-- 背景を暗く -->
+			    <label class="drawer_overlay" for="drawerCheckbox"></label>
+			    <!-- ドロワー内のメニュー -->
+			    <nav class="drawer_menu">
+			    	<h1>わたし<span class="h1-space">の写真館</span></h1>
+
+				    <ul>
+					<li><a href="#message">message</a></li>
+					<li><a href="#photo">photo</a></li>
+					<li><a href="#cafe">cafe</a></li>
+					<li><a href="#info">info</a></li>
+					<li><a  class="reservation" href="#">撮影予約</a></li>
+					</ul>
+			    </nav>
+			  </div>
+
+		</div>
+	</header>
+
+	<!-- メインビジュアル -->
+	<div class="swiper-container slider1" id="mv">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/main-img1.jpg" alt="ヘッダー画像" />
+			</div>
+			<div class="swiper-slide">
+				<img src="images/main-img2.jpg" alt="ヘッダー画像" /> 
+			</div>
+			<div class="swiper-slide">
+				<img src="images/main-img3.jpg" alt="ヘッダー画像" /> 
+			</div>
+		</div>
+	</div>
+
+	<!-- ステイトメント -->
+	<div class="statement anime" id="message" >
+		<h2>うつりゆく、あなたへ</h2>	
+		<br>
+		<p>なんでもない日も特別な日も<br>写りたいおんなのこのために、ここはあります。<br>
+		<br>
+		「自分のこと可愛いと思えてたはずなのに、今ではもう見たくない」<br>「本当はいまの自分のことを残しておきたいけど写るのが怖い」<br>
+		<br>
+		その気持ちごと、あなたを大切に撮ることができたなら。<br>
+		<br>
+		この祈りがあなたと結びつきますように。<br>あなたにとって”わたしの写真館”だと思える場所になれますように。</p>
+	</div>
+
+	<div class="statement_mobile  anime" id="message" >
+		<h2>うつりゆく、あなたへ</h2>	
+		<br>
+		<p>なんでもない日も特別な日も<br>写りたいおんなのこのために、ここはあります。<br>
+		<br>
+		「自分のこと可愛いと思えてたはずなのに、<br>今ではもう見たくない」<br>
+		<br>
+		「本当はいまの自分のことを<br>残しておきたいけど写るのが怖い」<br>
+		<br>
+		その気持ちごと、<br>あなたを大切に撮ることができたなら。<br>
+		<br>
+		この祈りがあなたと結びつきますように。<br>あなたにとって”わたしの写真館”だと<br>思える場所になれますように。</p>
+	</div>
+
+
+	<!-- メニュー -->
+	<div class="main-section anime" id="photo">
+		<h3>photo menu</h3>
+		<img class="title1-line" src="images/line_gray.png">
+
+		<!-- メニュースライド -->
+		<div class="swiper-container slider2">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p>おためし撮影</p>
+					<img src="images/menu-img1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<p>写真館で撮影</p>
+					<img src="images/menu-img2.jpg">
+				</div>	
+				<div class="swiper-slide">
+					<p>ロケーション撮影</p>
+					<img src="images/menu-img3.jpg">
+				</div>	
+			</div>
+
+			<div class="swiper-button-prev swiper-button-white"></div>
+			<div class="swiper-button-next swiper-button-white"></div>
+
+			<div class="swiper-pagination"></div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="main-section anime" id="cafe">
+
+		<h3>cafe</h3>
+		<img class="title-line2" src="images/line_gray.png">
+
+		<p>「わたしの写真館」は喫茶スペースを併設しております。<br>ぜひお気軽にお立ち寄りください。</p>
+
+		<!-- カフェイメージ -->
+		<div class="swiper-container slider3">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide coffee">
+					<img src="images/cafe-img1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/cafe-img2.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/cafe-img3.jpg">
+				</div>
+			</div>
+
+			<div class="swiper-button-prev swiper-button-white"></div>
+			<div class="swiper-button-next swiper-button-white"></div>
+
+			<div class="swiper-pagination"></div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div class="info-section anime" id="info">
+
+		<h3>info</h3>
+		<img class="title-line2" src="images/line_gray.png">
+
+		<div class="map-and-info">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.43489524752!2d139.71378991525845!3d35.666292180197836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9e1ada9d59%3A0x702ce5c7ef178f3f!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yT5LiB55uu77yX4oiS77yS77yR!5e0!3m2!1sja!2sjp!4v1610700839085!5m2!1sja!2sjp" width="" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+			<div class="information">
+				<table>
+					<tr>
+						<th>営業時間</th><td><span>10:00-18:00<span class="mrg">定休日：木曜</span></span></td>
+					</tr>
+					<tr>
+						<th>住所</th><td>東京都〇〇区〇〇1-1-1</td>
+					</tr>
+					<tr>
+						<th>電話番号</th><td>03-123-4567</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer>
+		わたしの写真館　All Rights Reserved.
+	</footer>
+
+
+
+	<!-- swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- swiper -->
+	<script>
+	let swiper1 = new Swiper('.slider1',{
+ 	 effect: 'fade',
+ 	 loop: true,
+ 	 autoplay: {
+	     delay: 4000,
+	     disableOnInteraction: false //ユーザー操作後に自動再生を再開する
+     },
+     speed: 2000 //２秒かけながら次の画像へ移動
+  	 });
+
+	let swiper2 = new Swiper('.slider2',{
+					loop: true,
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				    pagination: {
+				    	el: '.swiper-pagination',
+				    	clickable: true,
+				    },
+				    breakpoints: {
+				      	768: {
+				      		centeredSlides: true,
+				  			slidesPerView: 1.5
+				      	},
+				      	640: {
+				  			centeredSlides:true,
+				  			slidesPerView: 1
+				      	}
+			      	}
+				});
+
+	let swiper3 = new Swiper('.slider3',{
+					loop: true,
+				    pagination: {
+				    	el: '.swiper-pagination',
+				    	clickable: true,
+				    },
+				    navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				    breakpoints: {
+				      	768: {
+				      		centeredSlides: true,
+				  			slidesPerView: 1.5,
+				      	},
+				      	640: {
+				  			centeredSlides:true,
+				  			slidesPerView: 1,
+				      	},
+				    }
+				});
+	 
+	</script>
+
+
+	<!-- ScrollReveal JS -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!-- scroll reveal -->
+	<script>
+		ScrollReveal().reveal('.anime',{
+			duration: 1300
+		})
+	</script>
+
+	<!-- Smooth scroll JS -->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]',{
+			header: '#header-nav',
+		});
+	</script>
+
+	
+
+</body>
+</html>
+

@@ -23,14 +23,11 @@ header{
 	background-color: #f8f8f8;
 	width: 100%;
 	height: 85px;
-	position: fixed;
-	top: 0;
-	left: 0;
 }
 
 .header-inner{
 	width: 100%;
-	height: 85px;
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -88,7 +85,6 @@ li{
 
 #mv{
 	position: relative;
-	margin-top: 85px;
 	width: 90%;
 	height: 625px;
 	z-index: 1;
@@ -486,6 +482,7 @@ h1{
 	position: relative;
 	width: 90%;
 	height: 260px;
+	margin-top: 60px;
 }
 
 /*=============================*/

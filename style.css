@@ -88,6 +88,7 @@ li{
 
 #mv{
 	position: relative;
+	margin-top: 85px;
 	width: 90%;
 	height: 625px;
 	z-index: 1;
@@ -96,7 +97,6 @@ li{
 #mv img{
 	width: 100%;
 	height: 100%;
-	margin-top: 85px;
 	position: absolute;
 	border-radius: 10px;
 	object-fit: cover;
